@@ -1,0 +1,8 @@
+<h1>Book</h1>
+
+<h1>Title: <%= @book.title %></h1>
+<h2>Description: <%= @book.description %></h2>
+
+<%= form_tag "/books/#{@book.id}", method:  :delete do %>
+  <p><input type="submit", value="Delete book"></p>
+<% end %>
