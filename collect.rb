@@ -21,9 +21,9 @@ p a.collect { |x| "#{x}!" }        #=> ["a!", "b!", "c!", "d!"]
 p a                                #=> ["a", "b", "c", "d"]
 
 a = [ "a", "b", "c", "d" ]
-p a #=>  [ "a!", "b!", "c!", "d!" ]
+p a 
 a.collect! {|x| x + "?" }
-p a #=>  ["", "b", "c!", "d!"]
+p a 
 #destructive form
 #does not create a new array, but modifies the original
 
